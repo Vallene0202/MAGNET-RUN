@@ -13,7 +13,7 @@
 <script>
 // ===== ONLINE LEADERBOARD: paste your Firebase Realtime Database URL here =====
 // e.g. 'https://your-project-default-rtdb.firebaseio.com'  (leave '' to disable)
-const LB_URL='https://magnet-run-6cf59-default-rtdb.asia-southeast1.firebasedatabase.app/';
+const LB_URL='https://magnet-run-6cf59-default-rtdb.asia-southeast1.firebasedatabase.app';
 (()=>{const cv=document.querySelector('#cv'),c=cv.getContext('2d'),$=id=>document.getElementById(id);let W,H,dpr,keys={},touch={l:false,r:false,p:false},active=false,paused=true,camera=0,battery=100,score=0,pol=1;
 function resize(){W=innerWidth;H=innerHeight;dpr=Math.min(devicePixelRatio||1,2);cv.width=W*dpr;cv.height=H*dpr;c.setTransform(dpr,0,0,dpr,0,0)}addEventListener('resize',resize);resize();
 const end=4100,ground=x=>H*.72+Math.sin(x*.006)*44+Math.sin(x*.016)*16+Math.sin(x*.002)*30-((x>650&&x<850)?Math.sin((x-650)/200*Math.PI)*85:0)-((x>1500&&x<1740)?Math.sin((x-1500)/240*Math.PI)*105:0)-((x>2550&&x<2780)?Math.sin((x-2550)/230*Math.PI)*90:0);
